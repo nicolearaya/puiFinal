@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63843006-06e9-4189-be76-44e80e6841bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/coverImage2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/coverImg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/headshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icon-legend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/livechat_orig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/olympicsCover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/p5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/sketch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/projects/olympics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638066999100</updated>
       <workItem from="1638067000862" duration="648000" />
-      <workItem from="1638492972157" duration="19046000" />
+      <workItem from="1638492972157" duration="19689000" />
     </task>
     <servers />
   </component>
