@@ -1,4 +1,6 @@
 // SOFT BODY
+// STARTER CODE ATTRIBUTION: https://p5js.org/examples/simulate-soft-body.html
+//  Original example by Ira Greenberg.
 
 // center point
 let centerX = 0.0, centerY = 0.0;
