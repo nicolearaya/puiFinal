@@ -1,2 +1,1 @@
-PUI Final: Portfolio website
-Github pages hosted site: https://nicolearaya.github.io/puiFinal/index.html
+PUI Final Portfolio website: https://nicolearaya.github.io/puiFinal/index.html
