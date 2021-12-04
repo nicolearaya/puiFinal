@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+
+    <!-- javascript -->
+    <script src="../js/p5.js" type="text/javascript"></script>
+
+    <title>Nicole Araya</title>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light navBar">
+    <a class="navbar-brand" href="../../index.html">Nicole Araya</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active pl-5">
+                <a class="nav-link" href="../../index.html">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="../../about.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row" id="coverText">
+        <div class="col-lg-5">
+            <h1>Olympics</h1><br><br>
+            <div class="row">
+                <div class="col-sm">
+                    <h6>DOMAIN</h6>
+                    Data Visualization<br>
+                    UX/UI<br><br>
+
+                    <h6>TEAM</h6>
+                    Marie Konopacki<br>
+                    Miu Kumakura
+                </div>
+                <div class="col-sm mb-5">
+                    <h6>MY ROLES</h6>
+                    Co-Lead Designer<br>
+                    UX Engineer<br><br>
+
+                    <h6>SKILLS</h6>
+                    Literature Review<br>
+                    Competitive Analysis<br>
+                    Usability Testing<br>
+                    Contextual Testing<br>
+                    Stakeholder + User Interviews
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 description">
+            The Olympics have long been hailed as the highest standard of athletic achievement. During a Harvard computer science course on data visualization, I worked in a team to build a website that challenges the idea that the Games are a simple meritocracy by contextualizing medal wins with social, economic, and political factors.
+        </div>
+    </div>
+    <div class="row my-4">
+            <img src="../img/olympicsCover.png" alt="data visualization mapping country medals wins against their gdp over time">
+    </div>
+    <div class="row py-5">
+        <div class="col-xl">
+            <h6>1/ PROBLEM DEFINITION</h6>
+            <p>We first defined our target audience to be the general public, assuming minimal background knowledge of Olympics history. We wanted to invite users to compare themselves to the athletes through interactive elements of our story and encourage them to develop insights from: 1) cross-country comparisons of records/wins, 2) an analysis of how social, economic, and political factors influence the games, and 3) individual-level data that portray what it takes to become an Olympic athlete.
+            <p>To do so, we researched available datasets regarding Olympics history, individual-level athlete data, census economic data, and global economic data. From these resources, we sketched visualizations to build our data story and used Tableau to further explore trends and correlations.</p>
+            </p>
+        </div>
+        <div class="col-xl py-2">
+            <img src="../img/data-sketch.jpg" alt="hand drawn sketches of potential data visualization given the dataset">
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-xl">
+            <h6>2/ DATA AND STORYBOARD</h6>
+            <p>We initially included gender inequalities, geographic distribution, economic data, and political events among the relevant factors, but found it challenging to format the audience takeaways into a cohesive data story. Given the scope of the project and the limitations of available data, we decided to narrow our focus to the effect of economic inequalities on Olympic results. Our data was more granular for the United States than for other countries, so we needed to communicate these localized findings without extrapolating globally.</p>
+            <p>We created our data storyboard with the following narrative structure: hook, rising insights, main message, and resolution. Our hook allowed users to compare their own biological data to that of Olympic athletes, creating a personalized connection to the data story. The story then transitions from individual-level US athlete data to country-level inequalities, culminating in sport accessibility rankings based on the diversity of winners and athletes.</p>
+        </div>
+        <div class="col-xl py-2">
+            <img src="../img/storyboard.jpg" alt="post it note style data storyboard flowing from hook, rising insights, rising insights 2, main message, to solution and resolution">
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-xl">
+            <h6>3/ PROTOTYPE</h6>
+            <p>The next step was to prototype the website based on our data storyboard. I built a website framework using HTML and CSS, and created a Github repository to facilitate team collaboration. We utilized object-oriented Javascript programming and D3 interactive visualization libraries to create a class for each visualization type. Within each class we maintained a consistent, readable code structure of initialization, data wrangling, and visualization updating. Our final prototype included a choropleth map, scrollable data table, line and area charts, bubble chart, and parallel coordinate chart.</p>
+        </div>
+        <div class="col-xl py-2">
+            <img src="../img/olympics_iteration1.jpg" alt="mid fidelity iteration of data visualization">
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-xl">
+            <h6>4/ TEST AND REVISE</h6>
+            <p>
+                We then tested our data story design with user interviews and think aloud studies. We received feedback on the intuitiveness of the user interface, clarity of the data messages, and effectiveness of the visual encodings. We found that users sometimes did not find the information encoded in the tooltips, so we made clear indications when to hover or moved the dynamic data to the page. The feedback also indicated that our data sources were not always clear, so we applied a header system to each visualization to consistently signal the timespan and location of the data. Using visual design guidelines including whitespace, C.R.A.P (contrast, repetition, alignment, and proximity), and Gestalt principles, we refined the interaction designs to emphasize each visualization's data message and relevance to Olympics accessibility.
+            </p>
+        </div>
+        <div class="col-xl py-2">
+            <img src="../img/think-aloud.jpg" alt="screenshot of anonymized user feedback">
+        </div>
+    </div>
+    <div class="p-3"></div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

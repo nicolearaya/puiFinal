@@ -1,1 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- javascript -->
+    <script src="assets/js/sketch.js" type="text/javascript"></script>
+
+    <title>Nicole Araya</title>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light navBar">
+    <a class="navbar-brand" href="#">Nicole Araya</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- main body container, responsive -->
+<div class="container">
+    <!-- title slide -->
+    <div class="row" id="coverText">
+        <div class="col-lg">
+            <h1 class="fun-hover">Nicole Araya,</h1>
+            <h1>Product Designer</h1>
+            <h2 class="subtitle">
+                Hello! I am data-driven, curious individual passionate about building accessible and inclusive digital platforms. I thrive at the intersection of technology, art, and storytelling.
+            </h2>
+        </div>
+        <div class="col-lg">
+            <div class="blobcontainer">
+                <img src="assets/img/unravel_illustration1-edited2-01.png" id="coverImg" alt="vector illustration of woman in front of podium giving a presentation">
+                <div class="shape"></div>
+            </div>
+        </div>
+    </div>
+    <!-- projects -->
+    <div class="row pt-5">
+        <div class="col-sm pt-5 mb-neg50">SELECTED WORKS</div>
+    </div>
+    <!-- only olympics project is live -->
+    <a href="assets/projects/olympics.html" class="row project px-4 projectcontainer">
+        <div class="col-md py-2">
+            <img src="assets/img/olympics.png" class="image" alt="desktop mockup of data visualization project on olympics accessibility">
+        </div>
+        <div class="col-md p-2">
+            <h3>Visualizing Olympics Accessibility</h3>
+            <p class="projectDescription">An interactive website visualizing the influence of economic data on Olympics outcomes.</p>
+            <p class="projectDomain">Web Development - UX Design</p>
+        </div>
+        <div class="overlay">
+        </div>
+    </a>
+    <div class="row project px-4">
+        <div class="col-md">
+            <img src="assets/img/playhouse.png" alt="iphone mockup of PlayHouse app, a theater immersion project">
+        </div>
+        <div class="col-md p-2">
+            <h3>PlayHouse: Show Companion</h3>
+            <p class="projectDescription">A product that translates the experience of 3D performance venues into 2D interfaces.</p>
+            <p class="projectDomain">Product Design - UI Design</p>
+        </div>
+    </div>
+    <div class="row project px-4">
+        <div class="col-md py-4">
+            <img src="assets/img/prms.png" alt="desktop and iphone mockup of the homepage for Pandemic Risk Mitigation Services">
+        </div>
+        <div class="col-md p-2">
+            <h3>Pandemic Risk Management Services</h3>
+            <p class="projectDescription">Web design and visual identity for PRMS, setting the standard for risk mitigation and business continuity through crisis.</p>
+            <p class="projectDomain">Web Design - Graphic Design</p>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript libraries from Bootstrap -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

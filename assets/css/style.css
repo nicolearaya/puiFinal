@@ -1,0 +1,272 @@
+/* site wide colors and font */
+
+:root {
+    --grey: #EEEEEE;
+    --darkBlue: #001A42;
+    --purple: #594972;
+    --background: #005;
+    --primary: #88D5BF;
+    --secondary: #9EB4FF;
+    --third: #007fcb;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+p {
+    color: var(--darkBlue);
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Navigation container*/
+.navBar {
+    padding: 50px 50px;
+    font-size: 18px;
+    color: var(--darkBlue);
+}
+
+.navBar a {
+    color: var(--darkBlue);
+}
+
+.mb-neg50 {
+    margin-bottom: -50px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul.nav a:hover {
+    color: var(--purple) !important;
+    transition: .5s ease;
+    box-shadow: 0px 10px var(--secondary);
+}
+
+
+/* Homepage */
+#coverText{
+    align-items: center;
+}
+
+.col-lg h1 {
+    /*font-size: 60px;*/
+    color: var(--darkBlue);
+    padding-right: 0px;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: var(--purple);
+    font-weight: 300;
+    line-height: 33px;
+    margin-top: 65px;
+    padding-right: 0px;
+}
+
+#coverText {
+    min-height: 75vh;
+}
+
+#coverContainer {
+    position: relative;
+}
+#coverImg {
+    position: absolute;
+    z-index: 5;
+}
+
+/* Homepage projects section */
+.project {
+    min-height: 486px;
+    align-items: center;
+    background-color: white;
+    margin: 100px 0px;
+}
+
+.projectDescription {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--purple);
+    padding: 30px 0px;
+}
+
+.projectDomain {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #AEAEAE;
+}
+
+.projectcontainer:hover{
+    transition: .5s ease;
+    box-shadow: 10px 10px var(--darkBlue);
+
+}
+
+
+/* individual project page */
+
+.description {
+    font-size: 18px;
+    color: var(--purple);
+    font-weight: 300;
+}
+
+h6 {
+    font-weight: 700;
+    color: #9EB4FF;
+}
+
+.cursor-wrap {
+    pointer-events: none;
+    opacity: 1.0;
+}
+
+.cursor-wrap {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 10000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cursor-wrap.mbm-ex {
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
+
+.cursor-dot {
+    width: 12px;
+    height: 12px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.blobcontainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.shape {
+    background: linear-gradient(45deg, var(--secondary) 0%, white 100%);
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 500px;
+    transition: all 1s ease-in-out;
+    width: 500px;
+    z-index: 0;
+}
+
+@keyframes morph {
+    0% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+
+/* responsive sizing */
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 300px) {
+    #coverImg {padding: 40px;}
+    #coverText {padding: 20px;}
+    .shape {
+        height: 400px;
+        width: 400px;
+    }
+    .subtitle {
+        padding-bottom: 40px;
+    }
+    ul.nav a:hover {
+        color: var(--purple) !important;
+        transition: .5s ease;
+        box-shadow: 0px 0px var(--secondary);
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    h1 {font-size:48px;} /*1rem = 16px*/
+    .shape {
+        height: 600px;
+        width: 600px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .shape {
+        height: 500px;
+        width: 500px;
+    }
+    ul.nav a:hover {
+        color: var(--purple) !important;
+        transition: .5s ease;
+        box-shadow: 0px 10px var(--secondary);
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {font-size:60px;} /*1rem = 16px*/
+    #coverText {padding: 0px;}
+    .shape {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+
+/* About page */
+.about {
+    max-width: 800px;
+}
